@@ -60,4 +60,4 @@ groupData <- finalData %>%
         group_by(subject, activity) %>%
         summarise_each(funs(mean))
 
-write.table(groupData, "./Getting_and_Cleaning_data_Project/MeanData.txt", row.names = FALSE)
+write.table(groupData, "./MeanData.txt", row.names = FALSE)
